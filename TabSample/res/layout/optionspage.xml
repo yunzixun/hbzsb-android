@@ -2,10 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_height="fill_parent" android:layout_width="fill_parent">
 
-	<LinearLayout android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_width="fill_parent">
-		<EditText android:layout_alignParentLeft="true"
-			android:layout_height="wrap_content" android:layout_weight="1" android:layout_width="fill_parent" android:hint="Search Text"/>
-		<Button android:layout_height="wrap_content"
-			android:layout_width="wrap_content" android:layout_alignParentRight="true" android:text="Search"/>
-	</LinearLayout>
+    <WebView
+        android:id="@+id/wv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <ProgressBar
+    android:layout_height="10dp"
+    android:layout_width="10dp"
+    android:id="@+id/progress2"
+    android:indeterminateOnly="true"
+    android:keepScreenOn="true"
+    android:layout_centerInParent="true" 
+     />
+    
 </RelativeLayout>
